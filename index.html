@@ -5,9 +5,152 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            box-shadow: 2px solid gray;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .head{
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .body span{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold; 
+            margin-right: 30px;
+        }
+        .footer span{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        article{
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top:30px;
+        }
+        .imgt{
+            background-image: url(./public/images/H2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 600px;
+            
+        }
+        .imgb{
+            background-image: url(./public/images/H1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 660px;
+            
+        }
+        .imgf{
+            background-image: url(./public/images/H4.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 600px;
+            
+        }
+        main{
+            display: flex;
+            margin-top: 20px;
+
+        }
+        .same{
+            border: 2px solid black;
+             width: 150px;
+            font-size: 20px;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            height: 30px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 20px;
+            
+            
+        }
+        .highlights{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+        }
+        article{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        
+    </style>
 </head>
 <body>
-    <h2>welcome to bengaluru</h2>
-    <p>is a electronic city</p>
+    <header>
+        <div class="head">
+            Shopper.
+        </div>
+        <div class="body">
+            
+            <span>Home</span>
+            <span>Catalog</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blogs</span>
+            <span>Docs</span>
+            
+            
+        </div>
+        <div class="footer">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart2"></span>
+        </div>
+    </header>
+    <article>
+        <span class="bi bi-lightning-fill"></span><span>HAPPY HOLIDAY DEALS ON EVERYTHING</span><span class="bi bi-lightning-fill"></span>
+    </article>
+    <main>
+      <div class="imgt">
+           <div class="same">Shop women <span class="bi bi-arrow-right"></span></div>
+      </div>
+      <div class="imgb">
+        <div class="same">Shop men<span class="bi bi-arrow-right"></span></div>
+      </div>
+      <div class="imgf">
+        <div class="same">Shop Kids<span class="bi bi-arrow-right"></span></div>
+      </div>
+    </main>
+    <div class="highlights">
+        <div>
+            <h4><span class="bi bi-truck"></span>FREE SHOPPING</h4>
+            <div><p>From all orders over $100</p></div>
+        </div>
+        <div>
+           <h4> <span class="bi bi-arrow-repeat"></span>FREE RETURNS</h4>
+            <div><p>Return money within 30 days</p></div>
+        </div>
+        <div>
+            <h4><span class="bi bi-lock"></span>SECURE SHOPPINF</h4>
+            <div><p>You're in safe hands</p></div>
+        </div>
+        <div>
+            </span><h4><span class="bi bi-tag"></span>OVER 10,000 STYLES</h4>
+            <div><p>We have everything you need</p></div>
+        </div>
+
+    </div>
 </body>
 </html>
